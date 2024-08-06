@@ -1,0 +1,17 @@
+Import java.util.*;
+public class Main{
+    public static void main(String[]Args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter number:");
+        int range=sc.nextInt();
+        for(int i=3;i<=range;i++){
+            for(int j=3;j<=i;j++){
+                for(int k=3;k<=j;k++){
+                    if(j*j+k*k ==i*i){
+                        System.out.println(i+","+j+","+k);
+                    }
+                }
+            }
+        }
+    }
+}
