@@ -1,0 +1,17 @@
+ import java.util.Scanner;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter word:");
+        String a=sc.nextLine();
+        a= a.toUpperCase();
+        a= a.replaceAll("\\s+","");
+        int front,back;
+        for(front=0,back=a.length()-1;front<back;front++,back--){
+            if(a.charAt(front)!=a.charAt(back)){
+                System.out.print("Not a Palindrome");
+                return ;
+            }
+        }System.out.print("Palindrome");
+    }
+}
